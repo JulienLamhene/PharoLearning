@@ -10,7 +10,7 @@ Class {
 { #category : #adding }
 DieHandle >> + aDieHandle [
 	| h |
-	h := DieHandle new.
+	h := self class new.
 	self dice do: [ :d | h addDie: d ].
 	aDieHandle dice do: [ :d | h addDie: d ].
 	^ h
