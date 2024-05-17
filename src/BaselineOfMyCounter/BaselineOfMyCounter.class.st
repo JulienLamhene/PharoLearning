@@ -7,5 +7,8 @@ Class {
 { #category : #baselines }
 BaselineOfMyCounter >> baseline: spec [
 	<baseline>
-	spec for: #common do: [ spec package: 'MyCounter'. spec group: 'default' with: #('MyCounter') ]
+	spec for: #common do: [ 
+		spec package: 'MyCounter'. spec group: 'default' with: #('MyCounter');
+		package: 'MyCounter'. spec group: 'default' with: #('MyCounter')  
+	]
 ]
