@@ -1,7 +1,7 @@
 Class {
 	#name : #BaselineOfDices,
 	#superclass : #BaselineOf,
-	#category : #BaselineOfPharoLearning
+	#category : #BaselineOfDices
 }
 
 { #category : #baselines }

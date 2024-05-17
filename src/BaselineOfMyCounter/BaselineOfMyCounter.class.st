@@ -1,7 +1,7 @@
 Class {
 	#name : #BaselineOfMyCounter,
 	#superclass : #BaselineOf,
-	#category : #BaselineOfPharoLearning
+	#category : #BaselineOfMyCounter
 }
 
 { #category : #baselines }
