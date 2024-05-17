@@ -1,11 +1,11 @@
 Class {
-	#name : #BaselineOfPharoLearning,
+	#name : #BaselineOfDices,
 	#superclass : #BaselineOf,
 	#category : #BaselineOfPharoLearning
 }
 
 { #category : #baselines }
-BaselineOfPharoLearning >> baseline: spec [
+BaselineOfDices >> baseline: spec [
 	<baseline>
 	spec for: #common do: [ spec package: 'Dices'. spec group: 'default' with: #('Dices') ]
 ]
