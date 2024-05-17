@@ -1,7 +1,7 @@
 SmalltalkCISpec {
   #loading : [
     SCIMetacelloLoadSpec {
-      #baseline : ['Dices', 'MyCounter'],
+      #baseline : 'PharoLearning',
       #onConflict : #useIncoming,
       #directory : 'src',
       #platforms : [ #pharo ]
