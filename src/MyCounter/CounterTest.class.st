@@ -51,7 +51,9 @@ self assert: c count equals: 0
 CounterTest >> testPrintOn [
 	| c |
 	c:= Counter startingAt: 5.
-	self assert: c printString equals: 'a Counter withValue 5 high number'.
+	self assert: c printString equals: 'a Counter withValue 5 try again'.
+	c count: 7.
+	self assert: c printString equals: 'a Counter withValue 7 high number'.
 ]
 
 { #category : #tests }
