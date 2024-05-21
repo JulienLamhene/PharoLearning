@@ -19,6 +19,13 @@ DieTest >> testInit [
 ]
 
 { #category : #running }
+DieTest >> testPrintOn [
+	|d|
+	d := Die new faces: 10.
+	self assert: d printString equals: 'a Die (10)'
+]
+
+{ #category : #running }
 DieTest >> testRolling [
 	|d|
 	d := Die new.
