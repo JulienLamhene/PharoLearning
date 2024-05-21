@@ -40,8 +40,10 @@ Counter >> initialize [
 
 { #category : #printing }
 Counter >> printOn: asStream [
-
 	super printOn: asStream.
 	asStream
-		nextPutAll: ' withValue ', count printString.
+		nextPutAll: ' withValue ';
+		nextPutAll: count printString.
+		(count > 5) ifTrue:[ asStream nextPutAll: ' congrat']
+		ifFalse: [ asStream nextPutAll: ' try again'].
 ]
