@@ -40,7 +40,8 @@ Counter >> initialize [
 
 { #category : #printing }
 Counter >> printOn: asStream [
+
 	super printOn: asStream.
-	asStream nextPutAll: ' withValue ' , count printString.
-	asStream cr
+	asStream
+		nextPutAll: ' withValue ', count printString.
 ]
