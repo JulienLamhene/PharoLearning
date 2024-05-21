@@ -43,7 +43,7 @@ Counter >> printOn: asStream [
 	super printOn: asStream.
 	asStream
 		nextPutAll: ' withValue ';
-		nextPutAll: count printString.
+		nextPutAll: count asString.
 		(count = 5) ifTrue:[ asStream nextPutAll: ' try again'].
 		(count > 5) ifTrue:[ asStream nextPutAll: ' high number'].
 		(count < 5) ifTrue: [ asStream nextPutAll: ' low number'].
