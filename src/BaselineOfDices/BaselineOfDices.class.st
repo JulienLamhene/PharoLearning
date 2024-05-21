@@ -7,5 +7,5 @@ Class {
 { #category : #baselines }
 BaselineOfDices >> baseline: spec [
 	<baseline>
-	spec for: #common do: [ spec package: 'Dices'. spec group: 'default' with: #('Dices') ]
+	spec for: #common do: [ spec packages: 'Dices','MyCounter'. spec group: 'default' with: #('Dices' 'MyCounter')]
 ]
