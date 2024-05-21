@@ -7,5 +7,13 @@ Class {
 { #category : #baselines }
 BaselineOfDices >> baseline: spec [
 	<baseline>
-	spec for: #common do: [ spec packages: (#('Dices' 'MyCounter') asOrderedCollection). spec group: 'default' with: #('Dices' 'MyCounter')]
+	spec for: #common do: [ 
+		spec package: 'Dices'.
+		spec group: 'default'
+		with: #('Dices').
+		
+		spec package: 'MyCounter'.
+		spec group: 'default'
+		with: #('MyCounter')
+	]
 ]
