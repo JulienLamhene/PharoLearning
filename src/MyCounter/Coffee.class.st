@@ -6,8 +6,6 @@ Class {
 
 { #category : #'as yet unclassified' }
 Coffee class >> coffeeName: coffeeName cup: cup [
-	"comment stating purpose of class-side method"
-	"scope: class-variables  &  class-instance-variables"
 	| espresso water dict|
 	dict := Dictionary new.
 	(coffeeName = 'espresso') ifTrue: [ 
@@ -26,10 +24,7 @@ Coffee class >> coffeeName: coffeeName cup: cup [
 
 { #category : #testing }
 Coffee class >> isACooffee: aCoffee [
-	"comment stating purpose of class-side method"
-	"scope: class-variables  &  class-instance-variables"
 	| array |
 	array := #('espresso' 'americano' 'mocha').
 	^ array includes: [ :elt | elt = aCoffee ].
-	
 ]
