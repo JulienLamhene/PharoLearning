@@ -31,11 +31,15 @@ Die >> initialize [
 	faces := 6
 ]
 
-{ #category : #initialization }
+{ #category : #printing }
 Die >> printOn: aStream [
-" a Die (faces number) "
+	" a Die (faces number) "
+
 	super printOn: aStream.
-	aStream nextPutAll: ' (', faces printString, ')'
+	aStream
+		nextPutAll: ' (' ;
+		nextPutAll: faces asString;
+		nextPutAll: ')'
 ]
 
 { #category : #accessing }

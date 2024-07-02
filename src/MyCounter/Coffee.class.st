@@ -4,27 +4,21 @@ Class {
 	#category : #MyCounter
 }
 
-{ #category : #'as yet unclassified' }
+{ #category : #testing }
 Coffee class >> coffeeName: coffeeName cup: cup [
-	| espresso water dict|
-	dict := Dictionary new.
+	| espresso water |
 	(coffeeName = 'espresso') ifTrue: [ 
 			espresso := 30 * cup.
-			dict at: #espresso put: espresso.
+			^ 'espresso : ',espresso asString.
 	].
 	(coffeeName = 'americano') ifTrue: [ 
-			espresso := 30 * cup. 
-			water := 70 * cup.
-			dict 
-				at: #espresso put: espresso;
-				at: #water put: water.
+			espresso := (30 * cup) asString. water := (70 * cup) asString.
+			^ 'espresso : ', espresso, ' water : ', water.
 	].
-	^ dict
+	^ ''.
 ]
 
 { #category : #testing }
 Coffee class >> isACooffee: aCoffee [
-	| array |
-	array := #('espresso' 'americano' 'mocha').
-	^ array includes: [ :elt | elt = aCoffee ].
+	^ #('espresso' 'americano' 'mocha') includes: [ :elt | elt = aCoffee ].
 ]
